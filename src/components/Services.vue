@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'Services'
+  name: 'ServicesPage'
 }
 </script>
 

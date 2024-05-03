@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Header/>
+    <About/>
+    <Services/>
+    <Contact/>
+  </div>
+  <footer>
+    <div class="footer">
+      <p>&copy; 2024 ООО "Казан Техно".</p>
+    </div>
+  </footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue';
+import About from './components/About.vue';
+import Services from './components/Services.vue';
+import Contact from './components/Contact.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    About,
+    Services,
+    Contact
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Titillium Web', sans-serif; /* Добавим шрифт Montserrat */
+  color: #111F22;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

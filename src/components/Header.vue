@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <img src="/public/logo_t.jpeg" alt="Kazan Techno" class="logo" @mouseover="increaseLogo" @mouseleave="resetLogo">
+      <img ref="logo" src="../assets/logo_t.jpeg" alt="Kazan Techno" class="logo" @mouseover="increaseLogo" @mouseleave="resetLogo">
       <h1 class="slogan">
         <p class="first-slogan">Инновации, качество, прогресс</p>
         <p class="second-slogan">Мы воплощаем вашу идею в программное решение!</p>
@@ -12,13 +12,17 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'HeaderPage',
   methods: {
     increaseLogo() {
-      this.$refs.logo.style.transform = 'scale(1.1)';
+      if (this.$refs.logo) {
+        this.$refs.logo.style.transform = 'scale(1.1)';
+      }
     },
     resetLogo() {
-      this.$refs.logo.style.transform = 'scale(1)';
+      if (this.$refs.logo) {
+        this.$refs.logo.style.transform = 'scale(1)';
+      }
     }
   }
 }
