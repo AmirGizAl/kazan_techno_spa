@@ -45,6 +45,21 @@ export default {
   font-size: 18px;
   line-height: 1.6;
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 10% 0;
+  }
+
+  .section-title {
+    font-size: 2em; /* Уменьшаем размер заголовка для мобильных устройств */
+  }
+
+  .content {
+    font-size: 100%; /* Уменьшаем размер текста для мобильных устройств */
+    margin: 0 20px; /* Уменьшаем боковые отступы */
+  }
+}
 </style>
 
 

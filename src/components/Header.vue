@@ -75,6 +75,32 @@ export default {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Столбцовая ориентация для мобильных устройств */
+    align-items: center; /* Центрируем элементы по горизонтали */
+  }
+
+  .logo {
+    width: 95%; /* Увеличим размер логотипа */
+    margin-bottom: 1%; /* Добавляем отступ снизу */
+  }
+
+  .slogan {
+    text-align: center; /* Центрируем текст */
+    margin: 0 1% 0; /* Убираем боковые отступы */
+    text-indent: 0; /* Добавим красную строку */
+  }
+
+  .first-slogan {
+    font-size: 70%;
+  }
+
+  .second-slogan {
+    font-size: 60%;
+    margin-left: 0; /* Убираем левый отступ для второго абзаца */
+  }
+}
 </style>
 
 

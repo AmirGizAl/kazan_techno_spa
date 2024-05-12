@@ -94,6 +94,32 @@ export default {
   font-size: 16px;
   text-indent: 1em; /* Добавим красную строку */
 }
+
+/* Стили для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .services {
+    padding: 3% 0;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .service {
+    width: 30%;
+    margin: 1% 3% 2%;
+    padding: 1% 7%;
+    border-radius: 4%;
+  }
+
+  .service h3 {
+    font-size: 120%; /* Уменьшим размер заголовка для мобильных устройств */
+  }
+
+  .service p {
+    font-size: 67%; /* Уменьшим размер текста для мобильных устройств */
+  }
+}
 </style>
 
 
