@@ -33,12 +33,10 @@ export default {
   width: 100%;
   padding: 20px 0;
   background: linear-gradient(135deg, #f1f8fe, #f1f8fe);
-  //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   max-width: 1200px;
