@@ -25,10 +25,9 @@
         </div>
         <div class="service">
           <h3>OutStaff</h3>
-          <p>Мы предлагаем услуги по предоставлению высококвалифицированных IT-специалистов для работы на удаленной основе (OutStaff).</p>
+          <p>Наши лучшие IT-специалисты готовы взяться за любой Ваш проект.</p>
         </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -42,34 +41,20 @@ export default {
 <style scoped>
 .services {
   width: 100%;
-  padding: 50px 0;
-  background-color: #6b7d87;
+  padding: 80px 0;
+  background: linear-gradient(-1000grad, #8cb5ed, #de5060);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.section-title {
-  color: #111F22;
-  font-size: 40px;
-  margin-bottom: 60px;
   text-align: center;
 }
 
-.services-list li {
-  margin: 0 20px 20px 0;
-  padding: 15px 20px;
-  background-color: #FFF;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.services-list li:hover {
-  transform: translateY(-5px);
+.section-title {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 .services-grid {
@@ -80,22 +65,29 @@ export default {
 
 .service {
   width: calc(33.3333% - 20px);
+  margin-bottom: 30px;
   padding: 20px;
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service h3 {
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .service p {
   font-size: 16px;
-  text-indent: 1em; /* Добавим красную строку */
+  color: #333;
 }
 
-/* Стили для мобильных устройств */
 @media screen and (max-width: 768px) {
   .services {
     padding: 3% 0;
@@ -121,5 +113,6 @@ export default {
   }
 }
 </style>
+
 
 

@@ -5,8 +5,8 @@
     <Services/>
     <Contact/>
   </div>
-  <footer>
-    <div class="footer">
+  <footer class="footer">
+    <div class="container">
       <p>&copy; 2024 ООО "Казан Техно".</p>
     </div>
   </footer>
@@ -30,18 +30,27 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 #app {
-  font-family: 'Titillium Web', sans-serif; /* Добавим шрифт Montserrat */
+  font-family: 'Montserrat', sans-serif;
   color: #111F22;
   max-width: 100%;
   margin: 0;
   padding: 0;
+  background: #f5f7fa;
 }
 
 .footer {
+  background: linear-gradient(-1000grad, #8cb5ed, #8cb5ed);
+  color: white;
+  padding: 20px 0;
+}
+
+.footer .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   text-align: center;
 }
 </style>
+

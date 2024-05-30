@@ -24,26 +24,27 @@ export default {
 .contact {
   width: 100%;
   padding: 80px 0;
-  background-color: #FFF;
+  background: linear-gradient(-1000grad, #de5060, #8cb5ed);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .section-title {
   color: #111F22;
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .content {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 1.6;
+  color: #111f22;
 }
 
 @media screen and (max-width: 768px) {
@@ -61,5 +62,6 @@ export default {
   }
 }
 </style>
+
 
 

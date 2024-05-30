@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <img ref="logo" src="../assets/logo_t.jpeg" alt="Kazan Techno" class="logo" @mouseover="increaseLogo" @mouseleave="resetLogo">
+      <img ref="logo" src="../assets/logo_t.png" alt="Kazan Techno" class="logo" @mouseover="increaseLogo" @mouseleave="resetLogo">
       <h1 class="slogan">
         <p class="first-slogan">Инновации, качество, прогресс</p>
         <p class="second-slogan">Мы воплощаем вашу идею в программное решение!</p>
@@ -32,8 +32,8 @@ export default {
 .header {
   width: 100%;
   padding: 20px 0;
-  background-color: #F1F8FE;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f1f8fe, #f1f8fe);
+  //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -46,25 +46,25 @@ export default {
 }
 
 .logo {
-  width: 320px; /* Увеличим размер логотипа */
-  transition: transform 0.3s ease-in-out; /* Добавим анимацию при изменении размера */
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .slogan {
-  color: #111F22;
-  opacity: 0.7;
+  color: #3C4D54;
+  opacity: 0.9;
   transition: opacity 0.3s ease-in-out;
-  text-indent: 2em; /* Добавим красную строку */
-  margin: 10px 30px;
+  margin: 0 20px;
 }
 
 .first-slogan {
-  font-size: 45px; /* Увеличиваем размер шрифта первого абзаца */
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .second-slogan {
-  font-size: 35px; /* Уменьшаем размер шрифта второго абзаца */
-  margin-left: 200px;
+  font-size: 28px;
+  margin-left: 5px;
 }
 
 .slogan:hover {
@@ -93,7 +93,7 @@ export default {
   }
 
   .first-slogan {
-    font-size: 70%;
+    font-size: 85%;
   }
 
   .second-slogan {

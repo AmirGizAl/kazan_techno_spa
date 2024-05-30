@@ -20,27 +20,27 @@ export default {
 .about {
   width: 100%;
   padding: 80px 0;
-  background-color: #FFF;
+  background: linear-gradient(-1000grad, #f1f8fe, #8cb5ed);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .section-title {
   color: #111F22;
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .content {
-  max-width: 1100px;
-  margin: 0 50px;
-  font-size: 22px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 20px;
   line-height: 1.6;
-  text-align: center;
+  color: #555;
 }
 
 @media screen and (max-width: 768px) {
@@ -58,4 +58,5 @@ export default {
   }
 }
 </style>
+
 
